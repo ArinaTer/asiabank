@@ -1,0 +1,81 @@
+.info-partners,
+.accordion-partners
+    .section__title
+        padding: 60px 0 40px
+        +r(768)
+            font-size: 18px
+            br
+                display: none
+    .section__column
+        display: flex
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+            padding-bottom: 30px
+        .column
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex-basis: 100%
+            max-width: 100%
+            padding-bottom: 60px
+            +r(768)
+                padding-bottom: 0
+            svg
+                margin: 0 0 30px
+                +r(768)
+                    width: 40px
+                    height: 40px
+                    margin-bottom: 20px
+            .col__text
+                border-top: 1px solid $green
+                padding: 20px 0
+                text-align: center
+                +r(768)
+                    font-size: 16px
+
+    .accordion__body
+        padding: 35px 20px 0 20px
+    .section__column
+        margin: 0
+        .col__title
+            padding: 15px 0
+        .col__text
+            padding: 0
+        .col-1
+            flex-basis: 25%
+            max-width: 25%
+        .col-2
+
+            flex-basis: 28%
+            max-width: 28%
+        .col-3
+            flex-basis: 28%
+            max-width: 28%
+
+.card-partners
+    .section__cards
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        padding: 60px 0
+        +r(768)
+            grid-template-columns: repeat(1, 1fr)
+
+        .card--item
+            background-color: $white
+            border-radius: 10px
+            padding: 20px 20px
+        .card--item:hover
+            background-color: $green
+        .card__text
+            padding: 20px 0
+
+.accordion-partners
+    .section__title
+        +r(768)
+            font-size: 22px
+            padding: 60px 15px 40px
+    .container
+        +r(768)
+            padding: 0

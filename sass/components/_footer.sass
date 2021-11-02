@@ -1,0 +1,173 @@
+.footer
+	padding-top: 100px
+	+r(768)
+		display: none
+
+	//============= Footer top
+	&__top
+		border-bottom: 1px solid $green
+		padding-bottom: 30px
+		display: flex
+		-webkit-justify-content: space-between 
+		justify-content: space-between
+
+	&__menu
+		display: flex
+		a
+			color: $s8
+			font-size: 14px
+			display: block
+			margin-bottom: 10px
+			+med
+
+		&--col
+			display: block
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			
+		&--title
+			margin-bottom: 30px
+			font-size: 18px
+			+med
+
+	&__contacts
+		a, p
+			display: block
+			+med
+			color: $green
+			font-size: 14px
+			+r(768)
+				font-size: 18px
+		img
+			margin-right: 10px
+			width: 50px
+			height: 50px
+		&--block
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			margin-bottom: 5px
+			+r(768)
+				margin-bottom: 15px
+			&:first-child
+				a
+					margin-bottom: 5px
+					&:last-child
+						margin-bottom: 0
+			&:last-child
+				margin-bottom: 0
+
+	//============== Footer bottom
+	&__bottom
+		padding: 30px 0 40px
+		display: flex
+		-webkit-justify-content: space-between 
+		justify-content: space-between
+		
+		&--desc
+			font-size: 10px
+			color: $s8
+			+ireg
+			+r(768)
+				font-size: 14px
+				padding-bottom: 30px
+				margin-top: 20px
+			
+		&--copyright
+			font-size: 10px
+			+ireg
+			color: $s8
+			+r(768)
+				font-size: 14px
+			span
+				display: block
+				margin-bottom: 5px
+				&:last-child
+					margin-bottom: 0
+			
+	&__social
+		+r(768)
+			display: flex
+			width: 100%
+			align-items: flex-start
+			flex-direction: column
+			margin-bottom: 40px
+		&--title
+			font-size: 14px
+			+med
+			margin-bottom: 15px
+			+r(768)
+				font-size: 16px
+		ul
+			display: flex
+			-webkit-justify-content: flex-end 
+			justify-content: flex-end 
+		li
+			margin-right: 15px
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+		a
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+			width: 37px
+			height: 37px
+			background: $f5
+			border-radius: 50%
+			cursor: pointer
+			transition: .2s ease
+			+r(768)
+				width: 50px
+				height: 50px
+			&:hover
+				background: $green
+				path
+					stroke: $gold
+
+
+// Mobile
+.footer__mobile
+	padding-top: 60px
+	display: none
+	+r(768)
+		display: block
+
+.footer__mobmenu
+	margin: 40px 0
+	h3
+		display: flex
+		img
+			transition: transform .3s cubic-bezier(0.1, 0.5, 0.8, 0.5)
+			transform: rotate(0)
+		a
+			color: $green
+			font-size: 18px
+			+med
+			display: inline-block
+			padding: 20px 0
+			width: 100%
+	a
+		color: #888
+
+	> ul
+		> li
+			border-bottom: 0.5px solid $black
+			> ul
+				padding: 15px 0
+				> li
+					margin-bottom: 10px
+					padding-left: 15px
+
+.footer__mobmenu ul ul
+	display: none
+
+.footer__mobmenu li.active > ul
+	display: block
+
+.footer__mobmenu li.active h3 > img
+	transition: transform .3s cubic-bezier(0.1, 0.5, 0.8, 0.5)
+	transform: rotate(180deg)

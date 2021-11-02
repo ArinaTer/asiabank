@@ -1,0 +1,45 @@
+.breadcrumb
+    &.xs
+        display: none
+        +r(768)
+            display: block
+
+    .breadcrumbs
+        display: flex
+        padding: 30px 0 0
+        flex-wrap: wrap
+        +r(768)
+            padding: 30px 0
+        .sep,
+        .home
+            font-size: 14px
+            margin: 0 7px 0 0
+            color: $s8
+            +reg
+            +r(768)
+                font-size: 14px
+        .current
+            +med
+            color: $green
+            +r(768)
+                font-size: 14px
+
+.banner
+    .breadcrumb
+        .sep,
+        .home,
+        .current
+            font-size: 14px
+            margin: 0 7px 0 0
+            color: $white
+            +reg
+
+.hero
+    .breadcrumb
+        .sep,
+        .home,
+        .current
+            font-size: 14px
+            margin: 0 7px 0 0
+            color: $white
+            +reg

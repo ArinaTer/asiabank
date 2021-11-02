@@ -1,0 +1,57 @@
+.overdraft
+    .container
+        padding: 0
+
+.info-overdraft
+    .cards__info
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        .card
+            max-width: 100%
+            height: auto
+            line-height: 140%
+            background-color: #f5f5f5
+            border-radius: 10px
+            &__text
+                padding: 20px 30px
+                font-size: 20px
+                line-height: 140%
+                +ireg
+
+    .section__column
+        display: flex
+        +r(768)
+            flex-direction: column
+        .block__cols-1,
+        .block__cols-2
+            flex-basis: 50%
+            max-width: 50%
+            margin: 0 10px
+            border: none
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+        .block__cols-3
+            flex-basis: 100%
+            max-width: 100%
+            margin: 0 10px
+            border: none
+        .column
+            border-bottom: 1px solid $green
+            display: flex
+            flex-direction: column
+            align-items: center
+            .col__item
+                display: block
+                color: $gold
+                font-weight: 500
+                font-size: 60px
+                +r(768)
+                    font-size: 40px
+            .col__title
+                padding: 0 0 20px
+        .col__text
+            padding: 20px 0
+            +r(768)
+                text-align: center
+                padding: 20px 0 30px

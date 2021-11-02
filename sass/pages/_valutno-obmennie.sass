@@ -1,0 +1,31 @@
+.exchange-bases
+    .container
+        +r(768)
+            padding: 0
+.exchange-list
+    .section__title
+        +r(768)
+            margin-bottom: 30px
+            font-size: 18px
+    .section__column
+        display: flex
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+            grid-gap: 10px
+        .col__text
+            padding: 20px 0
+        .block__cols-1
+            border-top: 1px solid $green
+            flex-basis: 80%
+            max-width: 80%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+        .block__cols-2
+            border-top: 1px solid $green
+            flex-basis: 80%
+            max-width: 80%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%

@@ -1,0 +1,613 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Овердрафт</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+</head>
+<body>
+    
+    <!-- BEGIN content -->
+    <header class="white">
+        <div class="container">
+            <button type="button" class="burger"><img src="img/burger.svg" alt=""></button>
+            <a href="/" class="header__logo"><img src="img/logo-2.svg" alt="Asia Invest Bank" /></a>
+            <div class="header__center">
+                <div class="header__menu">
+                    <ul>
+                        <li class="is-active"><a href="rko-scheta.html">Бизнесу</a></li>
+                        <li><a href="finansirovanie-kreditovanie.html">Финансовым организациям</a></li>
+                        <li><a href="krediti.html">Частным клиентам</a></li>
+                        <li><a href="express.html">АзияЭкспресс</a></li>
+                        <li><a href="about.html">Банк</a></li>
+                    </ul>
+                </div>
+                <div class="header__action">
+                    <div class="header__action--item header--search">
+                        <button><img src="img/search.svg" alt="" /></button>
+                    </div>
+                    <div class="header__action--item header--phone">
+                        <a href="tel:1234"><img src="img/phone-2.svg" alt="" /></a>
+                    </div>
+                    <div class="header__action--item header--lang">
+                        <button><img src="img/uz.svg" alt="" /></button>
+                    </div>
+                    <div class="header__action--item header--eye">
+                        <button><img src="img/eye.svg" alt="" /></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__banking">
+                <a class="btn btn-white" href="internet-banking.html">Интернет-банкинг</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile__overlay">
+        <div class="mobile__overlay--close">
+            <button><img src="img/mobile-x.svg" alt=""></button>
+        </div>
+        <form class="mobile__overlay--search" id="33" method="POST" autocomplete="off">
+            <input type="text" placeholder="Поиск" required />
+        </form>
+        <div class="header__mobmenu footer__mobmenu">
+            <ul>
+                <li>
+                    <h3><a href="internet-banking.html"><img src="img/mob-internet-bank.svg" alt=""> Интернет-банкинг</a> <img src="img/mob-arrow-45.svg" alt=""></h3>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-biznes.svg" alt=""> Бизнесу</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li>
+                            <a href="#">РКО</a> <img src="img/footer-arrow.svg" alt="">
+                            <ul>
+                                <li><a href="rko-scheta.html">Счета</a></li>
+                                <li><a href="rko-dokument.html">Документарные операции</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Финансирование </a> <img src="img/footer-arrow.svg" alt="">
+                            <ul>
+                                <li><a href="finansirovanie-kreditovanie.html">Кредитование</a></li>
+                                <li><a href="overdraft.html">Овердрафт</a></li>
+                                <li><a href="faktoring.html">Факторинг</a></li>
+                                <li><a href="torgovoe-finansirovanie.html">Торговое финансирование</a></li>
+                                <li><a href="banknotnie-operacii.html">Банкнотные гарантии</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <a href="#">Депозиты</a> <img src="img/footer-arrow.svg" alt="">
+                            <ul>
+                                <li><a href="usloviya-depozitov.html">Условия депозитов</a></li>
+                                <li><a href="vekselya.html">Векселя</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="valutniy-control.html">Валютный контроль</a></li>
+                        <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-chart.svg" alt=""> Финансовым организациям</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li><a href="mejbankovskoe-kreditovanie.html">Межбанковское кредитование</a></li>
+                        <li><a href="bank-partneri.html">Банки-партнеры</a></li>
+                        <li><a href="banknotnie-operacii.html">Банкнотные операции</a></li>
+                        <li><a href="valyutno-obmennie.html">Валютно-обменные операции</a></li>
+                        <li><a href="torgovoe-finansirovanie-2.html">Торговое финансирование</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-user.svg" alt=""> Частным клиентам</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li><a href="krediti.html">Кредиты</a></li>
+                        <li><a href="ipoteka.html">Ипотека</a></li>
+                        <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                    </ul>
+                </li>
+                <li><h3><a href="express.html"><img class="express-logo" src="img/mob-express.svg" alt=""></a> <img src="img/mob-arrow-45.svg" alt=""></h3></li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-home.svg" alt="">Банк</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li><a href="about.html">О банке</a></li>
+                        <li><a href="rukovodstvo-banka.html">Руководство</a></li>
+                        <li><a href="raskritie-info.html">Раскрытие информации</a></li>
+                        <li><a href="rekviziti.html">Реквизиты</a></li>
+                        <li><a href="press-slujba.html">Пресс-служба</a></li>
+                        <li><a href="career.html">Карьера в Банке</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- menu - lvl2 -->
+    <div class="menu__lvl2 menu__lvl2--white">
+        <div class="container">
+            <nav class="c-desktop-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="#">РКО</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Назад</a></li>
+                            <li><a href="rko-scheta.html">Счета</a></li>
+                            <li><a href="rko-dokument.html">Документарные операции</a></li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-item menu-item-has-children">
+                        <a href="finansirovanie-kreditovanie.html">Финансирование</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Назад</a></li>
+                            <li><a href="finansirovanie-kreditovanie.html">Кредитование</a></li>
+                            <li class="current-menu-item"><a href="overdraft.html">Овердрафт</a></li>
+                            <li><a href="faktoring.html">Факторинг</a></li>
+                            <li><a href="torgovoe-finansirovanie.html">Торговое финансирование</a></li>
+                            <li><a href="bankovskie-garantii.html">Банковские гарантии</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Депозиты</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Назад</a></li>
+                            <li><a href="usloviya-depozitov.html">Условия депозитов</a></li>
+                            <li><a href="vekselya.html">Векселя</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="valutniy-control.html">Валютный контроль</a></li>
+                    <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="breadcrumb xs">
+        <div class="container">
+            <ul class="breadcrumbs crumb">
+                <li><a href="#" class="home">Главная</a></li>
+                <li class="sep">›</li>
+                <li><a href="#"></a></li>
+                <li><a href="#" class="home">Бизнесу</a></li>
+                <li class="sep">›</li>
+                <li><a href="#" class="home">Финансирование</a></li>
+                <li class="sep">›</li>
+                <li class="current">Овердрафт</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="banner__breadcrumbs">
+            <div class="container">
+                <div class="breadcrumb">
+                    <ul class="breadcrumbs crumb">
+                        <li><a href="#" class="home">Главная</a></li>
+                        <li class="sep">›</li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#" class="home">Бизнесу</a></li>
+                        <li class="sep">›</li>
+                        <li><a href="#" class="home">Финансирование</a></li>
+                        <li class="sep">›</li>
+                        <li class="current">Овердрафт</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container banner__item">
+            <div class="banner__content">
+                <div class="banner__title">Овердрафт для<br /> юридических лиц</div>
+                <div class="banner__subtitle">
+                    <div class="subtitle">от<span class="subtitle__item">11%</span><br />годовых</div>
+                    <div class="subtitle">до<span class="subtitle__item">30</span>млн<br /> руб сумма кредита</div>
+                    <div class="subtitle">до<span class="subtitle__item">12</span>месяцев<br />срок кредита</div>
+                </div>
+            </div>
+            <div class="banner__img">
+                <img src="img/overdraft-item.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="overdraft">
+        <div class="container">
+            <div class="cards__info">
+                <div class="card">
+                    <p class="card__text">Овердрафт в Азия-Инвест Банке дает возможность быстро получить деньги на покрытие
+                        кассовых разрывов и дополнительное финансирование без залогового обеспечения</p>
+                    <p class="card__text">Лимит овердрафта рассчитывается в индивидуальном порядке, он зависит от ежемесячных
+                        поступлений, варьируется в пределах от 25 до 50% от оборота по счёту.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-overdraft">
+        <div class="container">
+            <div class="section__column">
+                <div class="block__cols-1">
+                    <div class="column">
+                        <span class="col__item">25%</span>
+                        <div class="col__title">от оборота</div>
+                    </div>
+                    <p class="col__text">Все движения по счёту в Азия-Инвест Банке (при наличии счета в других банках)</p>
+                </div>
+                <div class="block__cols-2">
+                    <div class="column">
+                        <span class="col__item">35%</span>
+                        <div class="col__title">от оборота</div>
+                    </div>
+                    <p class="col__text">Все движения по счёту в Азия-Инвест Банке (при наличии счета только в Азия-Инвест Банке)
+                    </p>
+                </div>
+                <div class="block__cols-3">
+                    <div class="column">
+                        <span class="col__item">50%</span>
+                        <div class="col__title">от оборота</div>
+                    </div>
+                    <p class="col__text">Все движения по счёту в Азия-Инвест Банке и в других банках (при условии предоствления
+                        обеспечения)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="accordion-overdraft">
+        <div class="container">
+            <div class="accordion mt100">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__text">Основные условия</div>
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="14" width="30" height="2" fill="#073F37" />
+                            <rect x="14" y="30" width="30" height="2" transform="rotate(-90 14 30)" fill="#073F37" />
+                        </svg>
+                    </div>
+                    <div class="accordion__body">
+                        <ul class="section__points">
+                            <li class="point__text"> Процентная ставка по кредиту – от 11% годовых</li>
+                            <li class="point__text">Максимальная сумма овердрафта — 30 000 000 руб.</li>
+                            <li class="point__text">Срок кредитования - до 12 месяцев</li>
+                            <li class="point__text">Максимальный срок непрерывной ссудной задолженности - 45 дней</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__text">Управление развития и проектной деятельности</div>
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="14" width="30" height="2" fill="#073F37" />
+                            <rect x="14" y="30" width="30" height="2" transform="rotate(-90 14 30)" fill="#073F37" />
+                        </svg>
+                    </div>
+                    <div class="accordion__body">
+                        <p>Cupcake ipsum dolor sit amet halvah. Tootsie roll jelly beans croissant brownie bear claw
+                            dragée chupa chups muffin. Pudding tiramisu lollipop fruitcake lemon drops liquorice.
+                            Chocolate bar cupcake cake.</p>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__text">Управление развития и проектной деятельности</div>
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="14" width="30" height="2" fill="#073F37" />
+                            <rect x="14" y="30" width="30" height="2" transform="rotate(-90 14 30)" fill="#073F37" />
+                        </svg>
+                    </div>
+                    <div class="accordion__body">
+                        <p>Cupcake ipsum dolor sit amet halvah. Tootsie roll jelly beans croissant brownie bear claw
+                            dragée chupa chups muffin. Pudding tiramisu lollipop fruitcake lemon drops liquorice.
+                            Chocolate bar cupcake cake.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-overdraft">
+        <div class="container">
+            <div class="mini-contact m60">
+                <div class="mini-contact__text">Подробную информацию Вы можете получить в Управлении кредитования<br /> по
+                    телефону<a href="#" class="mini-contact__phone"> +7(495) 363-37-04</a> или отправив запрос на почту <a href="#" class="mini-contact__phone"> credit@asiainvestbank.ru</a></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer__mobile">
+        <div class="container">
+            <div class="footer__contacts">
+                <div class="footer__contacts--block">
+                    <img src="img/footer-phone.svg" alt="">
+                    <div class="footer__contacts--item">
+                        <a href="tel:+7 495 363-37-01">+7 495 363-37-01</a>
+                        <a href="tel:+7 495 363-37-01">+7 495 363-37-02</a>
+                    </div>
+                </div>
+                <div class="footer__contacts--block">
+                    <img src="img/footer-mail.svg" alt="">
+                    <div class="footer__contacts--item">
+                        <a href="mailto:main@asiainvestbank.ru">main@asiainvestbank.ru</a>
+                    </div>
+                </div>
+                <div class="footer__contacts--block">
+                    <img src="img/footer-location.svg" alt="">
+                    <div class="footer__contacts--item">
+                        <p>119180, г. Москва, 2-й <br>Казачий пер., д. 3 стр. 1 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__mobmenu">
+                <ul>
+                    <li>
+                        <h3><a href="#">Финансовым организациям</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                        <ul>
+                            <li><a href="mejbankovskoe-kreditovanie.html">Межбанковское кредитование</a></li>
+                            <li><a href="bank-partneri.html">Банки-партнеры</a></li>
+                            <li><a href="banknotnie-operacii.html">Банкнотные операции</a></li>
+                            <li><a href="valyutno-obmennie.html">Валютно-обменные операции</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="#">Частным клиентам</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                        <ul>
+                            <li><a href="krediti.html">Кредиты</a></li>
+                            <li><a href="ipoteka.html">Ипотека</a></li>
+                            <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="#">Бизнесу</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                        <ul>
+                            <li><a href="rko-scheta.html">РКО</a></li>
+                            <li><a href="finansirovanie-kreditovanie.html">Финансирование</a></li>
+                            <li><a href="usloviya-depozitov.html">Депозиты</a></li>
+                            <li><a href="valutniy-control.html">Валютный контроль</a></li>
+                            <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                            <li><a href="internet-banking.html">Интернет-банкинг</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="#">Азия-Инвест Банк (АО)</a> <img src="img/footer-arrow.svg" alt=""></h3>
+                        <ul>
+                            <li><a href="about.html">О банке</a></li>
+                            <li><a href="rukovodstvo-banka.html">Руководство</a></li>
+                            <li><a href="raskritie-info.html">Раскрытие информации</a></li>
+                            <li><a href="rekviziti.html">Реквизиты</a></li>
+                            <li><a href="press-slujba.html">Пресс-служба</a></li>
+                            <li><a href="career.html">Карьера в Банке</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social--title">Следите за нами в соцсетях и в блоге</div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.39397 1.60645H6.35826C5.45842 1.60645 4.59543 1.96391 3.95915 2.60019C3.32286 3.23647 2.9654 4.09946 2.9654 4.9993V7.03502H0.929688V9.7493H2.9654V15.1779H5.67969V9.7493H7.7154L8.39397 7.03502H5.67969V4.9993C5.67969 4.81933 5.75118 4.64674 5.87844 4.51948C6.00569 4.39222 6.17829 4.32073 6.35826 4.32073H8.39397V1.60645Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M11.6083 1.60645H4.82254C2.94872 1.60645 1.42969 3.12548 1.42969 4.9993V11.785C1.42969 13.6588 2.94872 15.1779 4.82254 15.1779H11.6083C13.4821 15.1779 15.0011 13.6588 15.0011 11.785V4.9993C15.0011 3.12548 13.4821 1.60645 11.6083 1.60645Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9285 7.96556C11.0123 8.5303 10.9158 9.10707 10.6528 9.61382C10.3899 10.1206 9.97386 10.5315 9.4639 10.7882C8.95394 11.0449 8.37603 11.1342 7.81237 11.0435C7.2487 10.9528 6.72799 10.6867 6.3243 10.283C5.9206 9.8793 5.65447 9.35858 5.56377 8.79492C5.47307 8.23126 5.56241 7.65335 5.81909 7.14339C6.07577 6.63343 6.48671 6.21739 6.99347 5.95444C7.50022 5.69149 8.07699 5.59503 8.64173 5.67878C9.21778 5.7642 9.75109 6.03263 10.1629 6.44441C10.5747 6.8562 10.8431 7.38951 10.9285 7.96556Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.9453 4.66113H11.953" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="16.2857" height="16.2857" fill="white" transform="translate(0.0703125 0.25)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M15.894 1.60645L8.42969 9.07073" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M15.8917 1.60645L11.1417 15.1779L8.42746 9.07073L2.32031 6.35645L15.8917 1.60645Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="16.2857" height="16.2857" fill="white" transform="translate(0.964844 0.25)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M16.15 4.60601C16.0694 4.28397 15.9052 3.9889 15.6741 3.75061C15.443 3.51232 15.153 3.33924 14.8336 3.24887C13.6664 2.96387 8.99788 2.96387 8.99788 2.96387C8.99788 2.96387 4.32931 2.96387 3.16216 3.27601C2.84272 3.36639 2.55279 3.53946 2.32165 3.77775C2.09051 4.01604 1.92634 4.31111 1.84573 4.63315C1.63213 5.81764 1.52764 7.01922 1.53359 8.2228C1.52598 9.43543 1.63047 10.6462 1.84573 11.8396C1.9346 12.1516 2.10244 12.4355 2.33305 12.6637C2.56365 12.8919 2.84922 13.0568 3.16216 13.1424C4.32931 13.4546 8.99788 13.4546 8.99788 13.4546C8.99788 13.4546 13.6664 13.4546 14.8336 13.1424C15.153 13.0521 15.443 12.879 15.6741 12.6407C15.9052 12.4024 16.0694 12.1073 16.15 11.7853C16.362 10.6097 16.4665 9.41731 16.4622 8.2228C16.4698 7.01016 16.3653 5.79941 16.15 4.60601V4.60601Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.4707 10.4427L11.3725 8.22381L7.4707 6.00488V10.4427Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="16.2857" height="16.2857" fill="white" transform="translate(0.855469 0.25)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom--copyright">
+                <span>© 2015-2021, Азия-Инвест Банк (АО).</span>
+                <span>Генеральная лицензия Банка России № 3303<br> от 24.03.2015г.</span>
+            </div>
+            <div class="footer__bottom--desc">
+                <p>Список и Схема лиц, под контролем либо значительным влиянием которых <br> находится Банк</p>
+                <br>
+                <p>Азия-Инвест Банк (АО) использует файлы cookie для персонализации сервисов и <br> удобства пользователей. Cookie содержат обезличенную информацию о прошлых <br> посещениях сайта банка. <br> Вы можете отключить сбор cookie в настройках браузера</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer">
+        <div class="container">
+
+            <!-- footer top -->
+            <div class="footer__top">
+                <div class="footer__menu">
+                    <div class="footer__menu--col">
+                        <div class="footer__menu--title">Финансовым организациям</div>
+                        <div class="footer__menu--list">
+                            <ul>
+                                <li><a href="mejbankovskoe-kreditovanie.html">Межбанковское кредитование</a></li>
+                                <li><a href="bank-partneri.html">Банки-партнеры</a></li>
+                                <li><a href="banknotnie-operacii.html">Банкнотные операции</a></li>
+                                <li><a href="valyutno-obmennie.html">Валютно-обменные операции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__menu--col">
+                        <div class="footer__menu--title">Частным клиентам</div>
+                        <div class="footer__menu--list">
+                            <ul>
+                                <li><a href="krediti.html">Кредиты</a></li>
+                                <li><a href="ipoteka.html">Ипотека</a></li>
+                                <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__menu--col">
+                        <div class="footer__menu--title">Бизнесу</div>
+                        <div class="footer__menu--list">
+                            <ul>
+                                <li><a href="rko-scheta.html">РКО</a></li>
+                                <li><a href="finansirovanie-kreditovanie.html">Финансирование</a></li>
+                                <li><a href="usloviya-depozitov.html">Депозиты</a></li>
+                                <li><a href="valutniy-control.html">Валютный контроль</a></li>
+                                <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                                <li><a href="internet-banking.html">Интернет-банкинг</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__menu--col">
+                        <div class="footer__menu--title">Азия-Инвест Банк (АО)</div>
+                        <div class="footer__menu--list">
+                            <ul>
+                                <li><a href="about.html">О банке</a></li>
+                                <li><a href="rukovodstvo-banka.html">Руководство</a></li>
+                                <li><a href="raskritie-info.html">Раскрытие информации</a></li>
+                                <li><a href="rekviziti.html">Реквизиты</a></li>
+                                <li><a href="press-slujba.html">Пресс-служба</a></li>
+                                <li><a href="career.html">Карьера в Банке</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts--block">
+                        <img src="img/footer-phone.svg" alt="">
+                        <div class="footer__contacts--item">
+                            <a href="tel:+7 495 363-37-01">+7 495 363-37-01</a>
+                            <a href="tel:+7 495 363-37-01">+7 495 363-37-02</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts--block">
+                        <img src="img/footer-mail.svg" alt="">
+                        <div class="footer__contacts--item">
+                            <a href="mailto:main@asiainvestbank.ru">main@asiainvestbank.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts--block">
+                        <img src="img/footer-location.svg" alt="">
+                        <div class="footer__contacts--item">
+                            <p>119180, г. Москва, 2-й <br>Казачий пер., д. 3 стр. 1 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bottom -->
+            <div class="footer__bottom">
+                <div class="footer__bottom--desc">
+                    <p>Список и Схема лиц, под контролем либо значительным влиянием которых <br> находится Банк</p>
+                    <br>
+                    <p>Азия-Инвест Банк (АО) использует файлы cookie для персонализации сервисов и <br> удобства пользователей. Cookie содержат обезличенную информацию о прошлых <br> посещениях сайта банка. <br> Вы можете отключить сбор cookie в настройках браузера</p>
+                </div>
+                <div class="footer__bottom--copyright">
+                    <span>© 2015-2021, Азия-Инвест Банк (АО).</span>
+                    <span>Генеральная лицензия Банка России № 3303<br> от 24.03.2015г.</span>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__social--title">Следите за нами в соцсетях и в блоге</div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.39397 1.60645H6.35826C5.45842 1.60645 4.59543 1.96391 3.95915 2.60019C3.32286 3.23647 2.9654 4.09946 2.9654 4.9993V7.03502H0.929688V9.7493H2.9654V15.1779H5.67969V9.7493H7.7154L8.39397 7.03502H5.67969V4.9993C5.67969 4.81933 5.75118 4.64674 5.87844 4.51948C6.00569 4.39222 6.17829 4.32073 6.35826 4.32073H8.39397V1.60645Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M11.6083 1.60645H4.82254C2.94872 1.60645 1.42969 3.12548 1.42969 4.9993V11.785C1.42969 13.6588 2.94872 15.1779 4.82254 15.1779H11.6083C13.4821 15.1779 15.0011 13.6588 15.0011 11.785V4.9993C15.0011 3.12548 13.4821 1.60645 11.6083 1.60645Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.9285 7.96556C11.0123 8.5303 10.9158 9.10707 10.6528 9.61382C10.3899 10.1206 9.97386 10.5315 9.4639 10.7882C8.95394 11.0449 8.37603 11.1342 7.81237 11.0435C7.2487 10.9528 6.72799 10.6867 6.3243 10.283C5.9206 9.8793 5.65447 9.35858 5.56377 8.79492C5.47307 8.23126 5.56241 7.65335 5.81909 7.14339C6.07577 6.63343 6.48671 6.21739 6.99347 5.95444C7.50022 5.69149 8.07699 5.59503 8.64173 5.67878C9.21778 5.7642 9.75109 6.03263 10.1629 6.44441C10.5747 6.8562 10.8431 7.38951 10.9285 7.96556Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9453 4.66113H11.953" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="16.2857" height="16.2857" fill="white" transform="translate(0.0703125 0.25)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M15.894 1.60645L8.42969 9.07073" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.8917 1.60645L11.1417 15.1779L8.42746 9.07073L2.32031 6.35645L15.8917 1.60645Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="16.2857" height="16.2857" fill="white" transform="translate(0.964844 0.25)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M16.15 4.60601C16.0694 4.28397 15.9052 3.9889 15.6741 3.75061C15.443 3.51232 15.153 3.33924 14.8336 3.24887C13.6664 2.96387 8.99788 2.96387 8.99788 2.96387C8.99788 2.96387 4.32931 2.96387 3.16216 3.27601C2.84272 3.36639 2.55279 3.53946 2.32165 3.77775C2.09051 4.01604 1.92634 4.31111 1.84573 4.63315C1.63213 5.81764 1.52764 7.01922 1.53359 8.2228C1.52598 9.43543 1.63047 10.6462 1.84573 11.8396C1.9346 12.1516 2.10244 12.4355 2.33305 12.6637C2.56365 12.8919 2.84922 13.0568 3.16216 13.1424C4.32931 13.4546 8.99788 13.4546 8.99788 13.4546C8.99788 13.4546 13.6664 13.4546 14.8336 13.1424C15.153 13.0521 15.443 12.879 15.6741 12.6407C15.9052 12.4024 16.0694 12.1073 16.15 11.7853C16.362 10.6097 16.4665 9.41731 16.4622 8.2228C16.4698 7.01016 16.3653 5.79941 16.15 4.60601V4.60601Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.4707 10.4427L11.3725 8.22381L7.4707 6.00488V10.4427Z" stroke="#073F37" stroke-width="1.35714" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="16.2857" height="16.2857" fill="white" transform="translate(0.855469 0.25)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+</body>
+</html>

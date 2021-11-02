@@ -1,0 +1,81 @@
+.operations
+    .container
+        +r(768)
+            padding: 0
+    .cards__info
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        .card
+            max-width: 100%
+            height: auto
+            line-height: 140%
+            background-color: #f5f5f5
+            border-radius: 10px
+            &__text
+                padding: 20px 30px
+                font-size: 20px
+                line-height: 140%
+                +ireg
+
+    .section__cards
+        .card
+            border-radius: 10px
+            display: flex
+            .card__text
+                font-size: 20px
+                color: $green
+                padding: 40px
+
+.operation-list
+    padding-left: 20px
+    .section__title
+        margin-left: -20px
+        padding-bottom: 20px
+
+.bg-color-gold
+    +r(768)
+        border-radius: 10px
+
+.info-operations
+    .section__title
+        +r(768)
+            padding: 30px 0
+    .section__column
+        display: flex
+        grid-gap: 30px
+        padding-bottom: 125px
+        +r(768)
+            flex-direction: column
+            padding-bottom: 30px
+            grid-gap: 0
+        .col__text
+            padding: 20px 0
+        .block__cols-1
+            flex-basis: 65%
+            max-width: 65%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+        .block__cols-2
+            flex-basis: 25%
+            max-width: 25%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+    .card
+        display: flex
+        justify-content: space-between
+        +r(768)
+            flex-direction: column
+            text-align: center
+            padding: 20px 15px
+        .card__text
+            color: $green
+            +r(768)
+                font-size: 18px
+
+.contact-operations
+    .section__title
+        +r(768)
+            margin: 60px 0
+            padding-left: 15px

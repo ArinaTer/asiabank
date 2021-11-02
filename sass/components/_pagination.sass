@@ -1,0 +1,29 @@
+.pagination
+    width: 100%
+    display: flex
+    justify-content: center
+
+.nav-links
+    display: flex
+    a, span
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        background: $f5
+        display: flex
+        align-items: center
+        justify-content: center
+        +ireg
+        font-size: 18px
+        color: $green
+        margin-right: 15px
+        cursor: pointer
+        transition: .23s ease
+        &:last-child
+            margin-right: 0
+        &:hover
+            transition: .23s ease
+            background: $gold
+
+    .current
+        background: $gold

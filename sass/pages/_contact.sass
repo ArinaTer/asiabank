@@ -1,0 +1,62 @@
+.contacts
+    .section__contacts
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-gap: 30px
+        margin-top: 35px
+        +r(768)
+            grid-template-columns: repeat(1,1fr)
+
+        .column
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            border-bottom: 0.5px solid $green
+            padding: 20px 0
+            align-items: center
+            +r(768)
+                grid-template-columns: repeat(1,1fr)
+            &:first-child
+                border-top: 1px solid $green
+            .col__title
+                flex-basis: 75%
+                max-width: 75%
+                +r(768)
+                    flex-basis: 100%
+                    max-width: 100%
+            .col__text
+                flex-basis: 70%
+                max-width: 70%
+                +r(768)
+                    flex-basis: 100%
+                    max-width: 100%
+    &__img img
+        height: 300px
+        width: 100%
+        object-fit: cover
+        object-position: center
+        border-radius: 10px
+
+.accordion-contacts
+    .accordion
+        margin-top: 100px
+        +r(768)
+            margin-top: 60px
+        .column--1
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            +r(768)
+                grid-template-columns: repeat(1,1fr)
+            img
+                margin: 6px 10px
+                max-width: 15px
+                height: 15px
+            .col-1
+                .col__title
+                    padding: 0
+                .col__text
+                    font-size: 16px
+            .col-2
+                display: flex
+
+            .col-3
+                display: flex

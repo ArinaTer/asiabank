@@ -1,0 +1,121 @@
+.exchange-control-top
+    .container
+        +r(768)
+            padding: 0
+
+.exchange-control
+    .section__column
+        display: flex
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+        .column
+            flex-basis: 100%
+            max-width: 100%
+            padding-bottom: 60px
+            text-align: center
+            +r(768)
+                padding-bottom: 10px
+            svg
+                margin: 0 0 30px
+                +r(768)
+                    margin: 0 0 20px
+            .col__text
+                border-top: 1px solid $green
+                padding: 20px 0
+
+.control-tariffs
+    .section__title
+        margin: 60px 0 30px
+    .section__info
+        display: flex
+        grid-gap: 60px
+        margin-bottom: 100px
+        +r(768)
+            overflow-x: scroll
+            grid-gap: 20px
+        .card
+            background-color: $f5
+            border-radius: 10px
+            padding: 40px
+            +r(768)
+                padding: 20px
+                width: 280px
+        .subtitle
+            font-weight: 600
+            font-size: 35px
+            line-height: 120%
+            padding: 0 0 30px
+            color: $green
+            +r(768)
+                font-size: 25px
+            .col__title
+                font-weight: 500
+                font-size: 25px
+                padding-bottom: 10px
+                line-height: 120%
+                color: $green
+            .col__text
+                font-size: 18px
+                line-height: 140%
+                +r(768)
+                    font-size: 16px
+        .column
+            padding: 10px 0
+            border-bottom: 1px solid $green
+            &:last-child
+                border-bottom: none
+            .col__title
+                font-weight: 600
+                font-size: 16px
+                line-height: 100%
+                color: $green
+            .col__text
+                padding: 10px 0
+                font-size: 18px
+                line-height: 140%
+        .card__btn
+            display: flex
+            grid-gap: 30px
+            .btn
+                border: 1px solid $green
+                border-radius: 10px
+                color: $green
+                font-weight: 600
+                font-size: 16px
+                line-height: 18px
+                width: 200px
+                height: 50px
+                padding: 15px 0
+                text-align: center
+            .btn:hover
+                background-color: $green
+                color: $white
+        .btn__link
+            display: flex
+            align-items: center
+            color: $green
+            font-weight: 600
+            font-size: 16px
+            line-height: 18px
+
+.info-exchange-control
+    .section__cards
+        display: flex
+        grid-gap: 30px
+        padding-bottom: 100px
+        +r(768)
+            flex-direction: column
+        .card--item
+            background-color: $white
+            padding: 30px 20px
+            .card__text
+                padding: 20px 0
+        .card
+            padding: 30px 20px
+            background-color: $white
+            .card__text
+                padding: 20px 0
+        .card:hover,
+        .card--item:hover
+            background-color: $green

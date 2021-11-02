@@ -1,0 +1,104 @@
+.requisites
+    .headline
+        padding: 30px 0 60px 0
+    .section__column
+        .column
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            border-bottom: 0.5px solid $green
+            padding: 20px 0
+            align-items: center
+            +r(768)
+                grid-template-columns: repeat(1, 1fr)
+            &:last-child
+                border: none
+            .col__title
+                flex-basis: 75%
+                max-width: 75%
+                +r(768)
+                    flex-basis: 100%
+                    max-width: 100%
+                    +med
+                    padding: 0 0 10px
+            .col__text
+                flex-basis: 100%
+                max-width: 100%
+ 
+    .section__icon
+        display: flex
+        margin: 60px 0
+        .icon__text
+            color: $green
+            font-size: 18px
+            line-height: 100%
+            padding-top: 3px
+        img
+            max-width: 25px
+            height: 25px
+            margin: 0 10px 0 15px
+
+    .requisites-contact
+    .accordion
+        .column--1
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            +r(768)
+                display: flex
+                flex-direction: column
+            .block__cols-1
+                flex-basis: 100%
+                max-width: 100%
+            .block__cols-2
+                display: flex
+            .col-1
+                flex-basis: 65%
+                max-width: 65%
+                +r(768)
+                    flex-basis: 100%
+                    max-width: 100%     
+                .col-2
+                    flex-basis: 50%
+                    max-width: 50%
+                    +r(768)
+                        flex-basis: 100%
+                        max-width: 100%  
+                    
+        .column--2
+            display: flex
+            justify-content: flex-end
+            margin-top: 60px
+            +r(768)
+                justify-content: flex-start
+            .block__cols-1
+                flex-basis: 25%
+                max-width: 25%
+                +r(768)
+                    flex-basis: 100%
+                    max-width: 100% 
+            .block__cols-2
+                flex-basis: 25%
+                max-width: 25%
+                padding-left: 38px
+                +r(768)
+                    flex-basis: 100%
+                    max-width: 100%
+                    padding-left: 0  
+        .column--3
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            margin-top: 60px
+            +r(768)
+                grid-template-columns: repeat(1,1fr)
+            .col__item
+                display: block
+                color: $s8
+            .block__cols-1
+                padding-right: 30px
+                +r(768)
+                    padding-right: 0
+                .col__text
+                    padding: 10px 0
+
+.section__column .col__title
+    +r(768)
+        padding: 0 0 10px 0

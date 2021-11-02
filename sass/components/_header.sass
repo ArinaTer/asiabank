@@ -1,0 +1,448 @@
+/* // DESKTOP MENU // */
+header
+	display: block
+	width: 100%
+	z-index: 2
+	border-bottom: 1px solid $green
+	&.white
+		background: $green
+		border-bottom-color: $white
+		+r(768)
+			border-bottom-color: $green
+		+r(768)
+			background: $white
+		.header__logo
+			border-right-color: $white
+		.header__menu
+			li::before
+				background: $white
+			li.is-active::before
+				background: $white
+			a
+				color: $white
+		.header__banking
+			border-left-color: $white
+			.btn
+				background-color: $white
+				color: $green
+	.container
+		display: flex
+		width: 100%
+		-webkit-justify-content: space-between
+		justify-content: space-between
+	&.mb100
+		margin-bottom: 100px
+
+.header
+	+r(768)
+		border-bottom: 1px solid $green
+	&__logo
+		padding: 15px 30px 15px 0
+		border-right: 1px solid $green
+		+r(768)
+			border-right: none
+	&__center
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-align-items: center
+		align-items: center
+		width: 100%
+		padding: 0 30px
+		position: relative
+		+r(768)
+			padding: 0
+			justify-content: flex-end
+	&__menu
+		+r(768)
+			display: none
+		ul
+			display: flex
+		li
+			color: $green
+			margin-right: 15px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				bottom: -166%
+				left: 0
+				width: 100%
+				height: 0
+				background: $green
+			&.is-active::before
+				height: 2px
+			&:last-child
+				margin-right: 0
+			&:hover::before
+				height: 2px
+		a
+			color: $green
+			font-size: 14px
+			padding: 0
+			cursor: pointer
+			padding: 25px 0
+
+	&__action
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		&--item
+			margin-right: 15px
+			position: relative
+			&:last-child
+				margin-right: 0
+			+r(768)
+				img
+					width: 25px
+					height: 25px
+
+	&__banking
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		border-left: 1px solid $green
+		padding-left: 30px
+		+r(768)
+			display: none
+		.btn
+			width: 135px
+			height: 35px
+			line-height: 35px
+			background-color: $green
+			color: $white
+
+.header--lang
+	+r(768)
+		margin-right: 0
+
+.header--search,
+.header--eye
+	+r(768)
+		display: none
+
+.menu__lvl2
+	position: relative
+	width: 100%
+	box-sizing: border-box
+	border-bottom: 1px solid $green
+	+r(768)
+		display: none
+
+	&--white
+		background: $green
+		border-bottom: 1px solid $white
+		.c-desktop-menu li::before
+			background: $white
+		.c-desktop-menu a
+			color: $white
+		.c-desktop-menu .sub-menu
+			background: $green
+		.c-desktop-menu .sub-menu li:first-child::after
+			background: $white
+		.c-desktop-menu .sub-menu li:first-child
+			path
+				stroke: $white
+		// .sub-menu.js-menu-open
+		// 	background: $gold
+
+.c-desktop-menu
+	display: flex
+	width: 100%
+	ul
+		width: 100%
+		display: flex
+	li
+		margin-right: 15px
+		position: relative
+		&:hover::before
+			height: 2px
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 0
+			background: $green
+		&:last-child
+			margin-right: 0
+		&.current-menu-item::before
+			height: 2px
+	a
+		display: block
+		color: $green
+		font-size: 14px
+		cursor: pointer
+		padding: 25px 0
+		z-index: 10
+		&:hover
+			transition-timing-function: cubic-bezier(0.1, 0.5, 0.8, 0.5)
+	a:hover::before
+		max-width: 999px
+		transition: max-width .9s
+	.sub-menu
+		overflow: hidden
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 333
+		opacity: 0
+		visibility: hidden
+		width: 1000px
+		transform: translateY(20px)
+		background: $white
+		transition: visibility .3s, transform .3s, opacity .3s
+		height: 100%
+
+		li:first-child
+			position: relative
+			padding-right: 30px
+			a
+				display: flex
+				align-items: center
+			svg
+				width: 15px
+				height: 15px
+				margin-right: 5px
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				right: 0
+				width: 1px
+				height: 30px
+				background: $green
+				transform: translateY(-50%)
+		li:nth-child(2)
+			margin-left: 15px
+
+	.js-menu-open
+		visibility: visible
+		opacity: 1
+		transform: translateY(0)
+
+	.current-menu-item > .js-menu-active
+		// background-color: #2E1654
+		// color: white
+
+		&::after
+			background-color: #2E1654
+			color: white
+
+	// .js-menu-active
+	// 	border-bottom: 1px solid white
+
+
+	// div > ul > .menu-item-has-children > a::after
+	// 	display: inline-block
+	// 	margin-left: 8px
+	// 	height: 4px
+
+	// 	font-family: "Font Awesome 5 Free"
+	// 	content: "\f0d7"
+	// 	font-weight: 900
+	// 	transition: transform .3s
+	// 	font-size: 12px
+	// 	line-height: 4px
+
+	// .js-menu-active
+	// 	&::after
+	// 		transform: rotateX(180deg)
+
+		// background-color: #2E1654
+		// color: white
+
+/* ////// MOBILE MENU ////// */
+.burger
+	display: none
+	+r(768)
+		display: block
+		margin-right: 20px
+
+.mobile__overlay
+	position: fixed
+	top: 0
+	left: 0
+	overflow-y: scroll
+	width: 100%
+	height: 100vh
+	background: $white
+	z-index: 5555
+	padding: 20px
+
+	-webkit-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s
+	-webkit-transition: visibility 0s linear .55s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+	-o-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s
+	transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s
+	transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear .55s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+	-webkit-transform: translateX(-100%)
+	-ms-transform: translateX(-100%)
+	transform: translateX(-100%)
+	overflow-y: auto
+
+	&.is-open
+		-webkit-transform: translateX(0)
+		-ms-transform: translateX(0)
+		transform: translateX(0)
+		visibility: visible
+		-webkit-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s
+		-webkit-transition: visibility 0s linear 0s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+		-o-transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s
+		transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s
+		transition: transform .55s cubic-bezier(.4,0,.2,1),visibility 0s linear 0s,-webkit-transform .55s cubic-bezier(.4,0,.2,1)
+
+	&--close
+		width: 100%
+		text-align: right
+		button
+			width: 30px
+			height: 30px
+
+	&--search
+		margin-top: 20px
+		input
+			width: 100%
+			height: 60px
+			padding: 20px
+			border-radius: 10px
+			+ireg
+			font-size: 16px
+			color: $green
+			position: relative
+			background: $f5 url(../img/search-2.svg) no-repeat center right 20px
+			background-size: 20px
+			&::placeholder
+				font-size: 16px
+				+ireg
+				color: $green
+
+.header__mobmenu
+	margin: 20px 0 0 !important
+	h3
+		a
+			font-size: 20px
+			img
+				vertical-align: middle
+				margin-right: 5px
+				width: 18px
+				height: 18px
+				position: relative
+				top: -2px
+	> ul
+		> li
+			&:nth-child(5)
+				.express-logo
+					width: 100%
+			> ul
+				> li
+					margin-bottom: 15px
+					position: relative
+					padding: 0 20px !important
+					> a
+						font-size: 18px
+						width: 100%
+						position: relative
+						color: $black
+						display: block
+						&::before
+							content: ''
+							height: 1px
+							width: 10px
+							background: $green
+							position: absolute
+							top: 50%
+							left: -15px
+							transform: translateY(-50%)
+					img
+						position: absolute
+						top: 10px
+						right: 20px
+						transform: translateY(-50%)
+					> ul
+						padding-left: 20px 
+						> li
+							margin-top: 10px
+							> a
+								font-size: 16px
+								color: $black
+
+
+
+.lang--dropdown
+	position: absolute
+	top: 150%
+	left: 50%
+	padding: 20px 15px
+	background: #eee
+	border-radius: 10px
+	display: flex
+	z-index: 33
+	visibility: hidden
+	opacity: 0
+	transform: translateX(-50%) translateY(20px)
+	background: $white
+	transition: visibility .3s, transform .3s, opacity .3s
+	&.is-active
+		visibility: visible
+		opacity: 1
+		transform: translateX(-50%) translateY(0)
+	li
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+	a
+		display: flex
+		align-items: center
+		+med
+		font-size: 14px
+		color: $black
+		text-transform: uppercase
+	img
+		width: 15px
+		height: 15px
+		margin-right: 5px
+
+.search--dropdown
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	visibility: hidden
+	opacity: 0
+	transform: translateY(20px)
+	background: $green
+	transition: visibility .3s, transform .3s, opacity .3s
+	svg
+		position: absolute
+		top: 50%
+		left: 20px
+		transform: translateY(-50%)
+	&.is-active
+		visibility: visible
+		opacity: 1
+		transform: translateY(0)
+	input
+		width: 100%
+		height: 76.5px
+		text-indent: 50px
+		font-size: 16px
+		color: $green
+		+med
+		&::placeholder
+			+ireg
+			font-size: 16px
+			color: rgba($green, .5)
+
+.search--dropdown-close
+	position: absolute
+	top: 50%
+	right: 10px
+	transform: translateY(-50%)
+	width: 60px
+	height: 60px
+	svg
+		width: 15px
+		height: 15px

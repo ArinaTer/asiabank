@@ -1,0 +1,98 @@
+.trade-finance
+    .section__title
+        padding: 100px 0 40px
+        +r(768)
+            padding: 60px 0 30px
+    .cards__info
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        margin: 40px 0 100px 0
+        +r(768)
+            grid-template-columns: repeat(1, 1fr)
+            margin: 0 0 60px
+        .card
+            display: flex
+            border-radius: 10px
+            padding: 20px 30px
+            +r(768)
+                padding: 20px
+                flex-direction: column
+            img
+                +r(768)
+                    width: 50px
+            &__text
+                padding: 0 25px
+                +r(768)
+                    padding: 20px 0 0
+
+.trade-list
+    .section__title
+        +r(768)
+        font-size: 18px
+    .section__column
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        padding: 30px 0
+        +r(768)
+            grid-template-columns: repeat(1, 1fr)
+            padding: 20px 0
+            grid-gap: 10px
+        .col__text
+            padding: 20px 0
+
+.scheme
+    .column--1
+        justify-content: flex-end
+    .section__title
+        padding: 100px 0 40px
+    .section__column
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+        .col__text
+            padding: 20px 0
+            +r(768)
+                padding: 20px 0 0
+    .section__column
+        display: flex
+        .col__title
+            font-size: 20px
+            +bold
+        .block__cols-1,
+        .block__cols-2,
+        .block__cols-3
+            flex-basis: 23%
+            max-width: 23%
+            border: none
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+                margin-bottom: 30px
+        .column
+            display: flex
+            border-bottom: 1px solid $green
+            justify-content: space-between
+            +r(768)
+                padding-bottom: 20px
+            .col__item
+                padding: 20px 0
+                display: block
+                color: $gold
+                font-weight: bold
+                font-size: 20px
+                +r(768)
+                    padding: 0
+    .section__img
+        display: flex
+        grid-gap: 30px
+        +r(768)
+            overflow-x: scroll
+
+.contact-trade-finance
+    .section__card
+        display: flex
+        grid-gap: 30px

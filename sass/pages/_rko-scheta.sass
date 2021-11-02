@@ -1,0 +1,180 @@
+.bills
+    .section__title
+        +r(768)
+            padding: 30px 0
+    .section__subtitle
+        +r(768)
+            font-size: 18px
+            padding-bottom: 30px
+    .section__transition
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid $green
+        margin-top: 100px
+        a
+            font-size: 25px
+            line-height: 22px
+            color: $s8
+            padding: 30px
+    .section__column
+        display: flex
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+            grid-gap: 0
+        .col__text
+            padding: 20px 0
+        .block__cols-1
+            border-top: 1px solid $green
+            flex-basis: 45%
+            max-width: 45%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%           
+        .block__cols-2
+            border-top: 1px solid $green
+            flex-basis: 100%
+            max-width: 100%
+        .block__cols-3
+            border-top: 1px solid $green
+            flex-basis: 45%
+            max-width: 45%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+
+
+.info-bills
+    .section__info
+        display: flex
+        grid-gap: 60px
+        +r(768)
+            grid-gap: 20px
+            overflow-x: scroll
+            margin-top: 60px
+        .card
+            background-color: $f5
+            border-radius: 10px
+            padding: 40px
+            +r(768)
+                padding: 20px
+            .subtitle
+                font-weight: 600
+                font-size: 35px
+                line-height: 120%
+                color: $green
+                +r(768)
+                    font-size: 25px
+            .block__cols
+                padding: 20px 0 30px
+                +r(768)
+                    padding: 20px 0
+                .col__title
+                    font-weight: 500
+                    font-size: 25px
+                    line-height: 120%
+                    color: $green
+                    +r(768)
+                        font-size: 20px
+                .col__text
+                    font-size: 18px
+                    line-height: 140%
+                    +r(768)
+                        font-size: 16px
+            .column
+                padding: 10px 0
+                border-top: .3px solid $green
+                .col__title
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 100%
+                    color: $green
+                .col__text
+                    padding: 10px 0
+                    font-size: 18px
+                    line-height: 140%
+
+        .card__btn
+            margin: 30px 0
+            .btn
+                display: flex
+                padding: 14px 0
+                flex-direction: column
+                align-items: center
+                border: 1px solid $green
+                border-radius: 10px
+                color: $green
+                font-weight: 600
+                font-size: 16px
+                line-height: 18px
+                width: 207px
+                height: 50px
+            .btn:hover
+                background-color: $green
+                color: $white
+    .section__card
+        display: flex
+        border-radius: 10px
+        background-color: $gold
+        +r(768)
+            flex-direction: column
+            margin-top: 60px
+        .card__img
+            +r(768)
+                padding: 15px
+            img
+                margin: 20px
+                width: 370px
+                height: 250px
+                +r(768)
+                    width: 100%
+                    height: auto
+                    margin: 0
+        .card__info
+            padding: 70px 60px
+            +r(768)
+                padding: 0 15px 15px
+            .card__subtitle
+                .card__title
+                    padding: 12px 0
+                    font-size: 25px
+                    line-height: 120%
+                    color: $green
+                    +bold
+                    +r(768)
+                        padding-top: 0
+                .card__text
+                    padding-bottom: 25px
+                    font-size: 18px
+                    line-height: 150%
+                    +r(768)
+                        font-size: 16px
+                +ireg
+        .card__btn
+            display: flex
+            grid-gap: 30px
+            +r(768)
+                grid-gap: 20px
+            .btn
+                border: 1px solid $green
+                border-radius: 10px
+                color: $green
+                font-weight: 600
+                font-size: 16px
+                line-height: 18px
+                width: 200px
+                height: 50px
+                padding: 15px 0
+                text-align: center
+                +r(768)
+                    width: 160px
+            .btn:hover
+                background-color: $green
+                color: $white
+            .btn__link
+                display: flex
+                align-items: center
+                color: $green
+                font-weight: 600
+                font-size: 16px
+                line-height: 18px

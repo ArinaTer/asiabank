@@ -1,0 +1,81 @@
+.bank-management
+    position: relative
+
+    .section__title
+        align-items: center
+        display: flex
+        justify-content: space-between
+        +r(768)
+            padding: 30px 0 40px
+
+    &__line
+        display: block
+        width: 80%
+        border-top: 1px solid $black
+
+.leaders
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    +r(768)
+        flex-direction: column
+    &-2
+        -webkit-justify-content: flex-end
+        justify-content: flex-end
+        margin-top: 30px
+
+    &__col-2
+        display: flex
+
+    &__item
+        margin-right: 30px
+        max-width: 260px
+        +r(768)
+            max-width: 160px
+            margin-bottom: 40px
+        &:last-child
+            margin-right: 0
+
+    .bank-management__item
+        display: block
+        font-size: 14px
+        padding: 20px 0 0
+        +ireg
+        +r(768)
+            font-size: 12px
+
+    .bank-management__title
+        +bold
+        font-size: 20px
+        padding: 15px 0
+        color: $green
+        +r(768)
+            font-size: 16px
+
+    .bank-management__text
+        font-size: 16px
+        line-height: 22px
+        +ireg
+        +r(768)
+            font-size: 14px
+
+.bank-management__img img
+    +r(768)
+        max-width: 160px
+
+.qualification-information
+    .section__cards
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-gap: 30px
+        padding-bottom: 100px
+        .card
+            max-width: 360px
+            height: 200px
+            padding: 30px 20px
+            background-color: $white
+            border-radius: 10px
+            .card__text
+                padding: 20px 0
+        .card:hover
+            background-color: $green

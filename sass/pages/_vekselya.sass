@@ -1,0 +1,103 @@
+.promissory-notes
+    .section__title.--gold.p60
+        +r(768)
+            padding: 60px 0 30px
+            font-size: 22px
+
+.promissory-notes,
+.info-promissory-notes
+    .section__column
+        display: flex
+        padding-bottom: 40px
+        grid-gap: 30px
+        +r(768)
+            padding-bottom: 30px
+            flex-direction: column
+        .col__text
+            padding: 20px 0
+            +r(768)
+                padding: 20px 0 0
+        .block__cols-1
+            border-top: 1px solid $green
+            flex-basis: 100%
+            max-width: 100%
+        .block__cols-2
+            border-top: 1px solid $green
+            flex-basis: 100%
+            max-width: 100%
+        .col-1
+            flex-basis: 30%
+            max-width: 30%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+        .section__column
+            display: flex
+            margin: 60px 0 100px 0
+            grid-gap: 30px
+        .column
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex-basis: 100%
+            max-width: 100%
+            padding-bottom: 60px
+            +r(768)
+                padding-bottom: 0
+            svg
+                margin: 0 0 30px
+                +r(768)
+                    width: 40px
+                    height: 40px
+                    margin: 0 0 20px
+            .col__text
+                border-top: 1px solid $green
+                padding: 20px 0
+                text-align: center
+                +r(768)
+                    padding: 20px 0 0
+        .block__cols
+            flex-basis: 100%
+            max-width: 100%
+            .col__text
+                padding: 20px 0
+                border-top: 1px solid $green
+    .section__item
+        .section__text
+            font-size: 20px
+            line-height: 130%
+    .cards__info
+        margin: 0
+
+.info-promissory-notes
+    .section__title
+        +r(768)
+            margin: 60px 0 30px
+            br
+                display: none
+    .section__cards
+        display: flex
+        grid-gap: 30px
+        padding-bottom: 100px
+        +r(768)
+            flex-direction: column
+            padding-bottom: 30px
+        .card
+            padding: 30px 20px
+            background-color: $white
+            .card__text
+                padding: 20px 0
+        .card:hover
+            background-color: $green
+
+.veksel-document
+    .section__title
+        +r(768)
+            padding: 30px 0
+            margin: 0
+
+.veksel-operation-1
+    .section__title
+        margin: 60px 0 20px
+    .cards__info
+        margin: 0 -15px

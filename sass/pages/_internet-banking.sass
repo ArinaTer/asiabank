@@ -1,0 +1,73 @@
+.ib-page
+    .banner__action
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+        +r(768)
+            grid-gap: 10px
+            grid-template-columns: repeat(1, 1fr)
+    .btn
+        +r(768)
+            padding: 15px
+    .section__title.mt100
+        +r(768)
+            margin: 30px 0
+
+.internet-banking,
+.info-internet-banking
+    .headline
+        margin: 100px 0 40px
+    .section__title
+        margin: 100px 0 60px
+        +r(768)
+            margin: 60px 0 0
+    .section__column
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        margin: 60px 0 100px 0
+        grid-gap: 30px
+        +r(768)
+            grid-template-columns: repeat(1, 1fr)
+            margin: 30px 0
+        .col__text
+            padding: 20px 0
+        .col-1,
+        .col-2,
+        .col-3
+            border-top: 1px solid $green
+        .block__cols-1
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 30px
+            border: none
+            +r(768)
+                grid-template-columns: repeat(1, 1fr)
+        .block__cols-2
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 30px
+            border: none
+            +r(768)
+                grid-template-columns: repeat(1, 1fr)
+            .col-3
+                grid-column-end: 3 span
+                flex-basis: 100%
+                max-width: 100%
+                border-top: 1px solid $green
+    .section__cards
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
+        +r(768)
+            grid-template-columns: repeat(1, 1fr)
+        .card
+            padding: 20px 20px
+            height: 200px
+            border-radius: 10px
+
+        .card--item
+            padding: 30px 20px
+            height: 200px
+            border-radius: 10px
+        .card__text
+            padding-top: 20px

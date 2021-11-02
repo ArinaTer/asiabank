@@ -1,0 +1,424 @@
+.homepage
+	.hero__content
+		padding-top: 100px
+		+r(768)
+			padding-top: 30px
+	.hero .container
+		+r(768)
+			padding: 0 0 0 15px
+			height: 100%
+	header
+		+r(768)
+			border-bottom: 0
+
+.hero
+	background: $green
+	width: 100%
+	height: 650px
+	display: block
+	position: relative
+	+r(768)
+		border-radius: 10px
+		height: 350px
+
+	&__slider
+		height: 650px
+		+r(768)
+			height: 350px
+
+	&__item
+		display: flex !important
+		position: relative
+		+r(768)
+			height: 350px
+
+	&__content
+		max-width: 60%
+		flex-basis: 60%
+		z-index: 10
+		position: relative
+
+	&__title
+		font-size: 40px
+		+bold
+		line-height: 120%
+		color: $white
+		margin-bottom: 30px
+		&.xs
+			display: none
+			+r(768)
+				display: block
+		&.md
+			+r(768)
+				display: none
+		+r(768)
+			font-size: 25px
+			line-height: 110%
+			margin-bottom: 20px
+
+	&__subtitle
+		font-size: 20px
+		+ireg
+		line-height: 120%
+		color: $white
+		margin-bottom: 30px
+		display: none
+		+r(768)
+			font-size: 16px
+			line-height: 120%
+			display: block
+
+	&__img
+		max-width: 40%
+		flex-basis: 40%
+		display: flex
+		align-items: center
+		justify-content: center
+		+r(768)
+			position: relative
+			right: -30px
+			img
+				width: 300px
+				height: 300px
+				object-fit: cover
+				object-position: center
+			
+	.btn-white
+		padding: 16px 26px
+		font-size: 16px
+		+med
+		+r(768)
+			font-size: 14px
+
+	.btn-white:hover
+		background-color: $gold
+		color: $green
+
+	&__dots
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+	
+	.dots__text
+		font-size: 20px
+		+bold
+	.dots__number
+		font-size: 20px
+		+reg
+
+ul.slider-dots
+	display: flex
+	justify-content: space-between
+	+r(768)
+		width: 100%
+		justify-content: center
+		position: absolute
+		bottom: -25px
+		left: 0
+	li
+		margin-right: 40px
+		width: 100%
+		bottom: -40px
+		cursor: pointer
+		border: 1px solid $white
+		border-radius: 10px
+		background-color: transparent
+		color: $white
+		height: 120px
+		padding: 15px
+		+r(768)
+			height: 10px
+			width: 10px
+			background: $gold
+			bottom: 0
+			padding: 0
+			margin-right: 10px
+			border: none
+			transition: width .3s ease
+		&.slick-active
+			color: $green
+			background-color: $white
+			+r(768)
+				background-color: $gold
+				color: $gold
+				width: 20px
+				transition: width .3s ease
+		&:last-child
+			margin-right: 0
+
+.offers
+	padding: 60px 0
+	.section__title
+		margin-bottom: 35px
+		display: flex
+		justify-content: space-between
+	.slider__btns
+		display: flex
+	.prev__btn,
+	.next__btn
+		border-radius: 5px
+		width: 40px
+		height: 40px
+		border: 1px solid $green
+		display: flex
+		align-items: center
+		justify-content: center
+		+r(768)
+			width: 35px
+			height: 35px
+	.next__btn
+		margin-left: 10px
+		transform: rotate(180deg)
+		+r(768)
+			margin-left: 15px
+	.slick-slide
+		margin: 0 20px
+		+r(768)
+			margin: 0 10px
+
+	.slick-list
+		margin: 0 -20px
+		+r(768)
+			padding: 0 20% 0 15px !important
+
+	&__card
+		height: 350px
+		padding: 15px
+		width: 100%
+		border-radius: 10px
+		display: flex !important
+		flex-direction: column
+		justify-content: flex-end
+		color: $white
+		+r(768)
+			height: 300px
+
+	&__title
+		font-size: 24px
+		+bold
+		margin-bottom: 10px
+		+r(768)
+			font-size: 20px
+
+	&__text
+		font-size: 16px
+		+ireg
+		+r(768)
+			font-size: 14px
+
+	&__height
+		position: relative
+		height: 100px
+
+	&__link 
+		margin-top: 20px
+		display: block
+		a
+			color: $black
+			background-color: $white
+			display: inline-block
+			padding: 16px 26px
+			+med
+			border-radius: 10px
+			font-size: 14px
+
+.news
+	padding: 60px 0
+	background-color: $f5
+	+r(768)
+		padding: 40px 0
+	.section__title
+		margin-bottom: 35px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		a
+			text-decoration: underline
+			color: $black
+			font-size: 16px
+			+r(768)
+				font-size: 14px
+	&__list
+		display: grid
+		grid-gap: 35px
+		grid-template-columns: repeat(3, 1fr)
+		+r(768)
+			grid-gap: 15px
+			overflow-x: scroll
+	&__card
+		border: 1px solid $green
+		color: $green
+		border-radius: 10px
+		padding: 20px
+		cursor: pointer
+		transition: .2s ease color, .2s ease background
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		+r(768)
+			width: 280px
+		&:hover
+			color: $white
+			background-color: $green
+
+			.news__link
+				background-color: $gold
+				color: $green
+		footer
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			margin-top: 50px
+			+r(768)
+				flex-direction: column
+				align-items: flex-start
+				margin-top: 20px
+			p
+				+med
+				+r(768)
+					margin-bottom: 20px
+
+	&__text
+		+med
+		font-size: 20px
+		+r(768)
+			font-size: 18px
+	&__link
+		padding: 16px 41px
+		color: $white
+		background-color: $green
+		+med
+		font-size: 16px
+		+r(768)
+			font-size: 14px
+
+.currency
+	.section__title
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 30px
+		+r(768)
+			flex-direction: column
+			align-items: flex-start
+			margin-bottom: 15px
+	&__lastupdate
+		font-size: 14px
+		display: flex
+		+r(768)
+			font-size: 16px
+			margin-top: 15px
+		p
+			margin-left: 3px
+	.container
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		+r(768)
+			display: flex
+			flex-direction: column
+	&__convertor
+		padding: 60px 30px 60px 0
+		+r(768)
+			padding: 60px 0 30px
+	&__banner
+		background-color: $f5
+		width: 100%
+		height: 100%
+		+r(768)
+			height: 300px
+			border-radius: 10px
+	&__table
+		text-align: center
+		&--head
+			display: flex
+			align-items: center
+		&--body
+			.currency__table--item:first-child
+				+bold
+		&--row
+			display: flex
+			align-items: center
+			border-top: 0.5px solid $green
+		&--item
+			position: relative
+			flex-basis: 25%
+			max-width: 25%
+			padding: 20px 0
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 14px
+			button
+				margin-left: 10px
+				+r(768)
+					margin-left: 2px
+		&--input
+			z-index: 3
+			padding: 15px
+			position: absolute
+			bottom: -125%
+			background-color: $f5
+			border-radius: 10px
+			padding: 15px 20px
+			visibility: hidden
+			display: flex
+			align-items: center
+			transform: translateY(30px)
+			-webkit-transition: transform .35s cubic-bezier(0.4, 0.0, 0.2, 1), visibility .15s cubic-bezier(0.4, 0.0, 0.2, 1)
+			transition: transform .35s cubic-bezier(0.4, 0.0, 0.2, 1), visibility .15s cubic-bezier(0.4, 0.0, 0.2, 1)
+			+r(768)
+				left: -90px
+			&.is-active
+				visibility: visible
+				transform: translateY(0)
+				-webkit-transition: transform .35s cubic-bezier(0.4, 0.0, 0.2, 1), visibility .15s cubic-bezier(0.4, 0.0, 0.2, 1)
+				transition: transform .35s cubic-bezier(0.4, 0.0, 0.2, 1), visibility .15s cubic-bezier(0.4, 0.0, 0.2, 1)
+			input
+				padding: 15px
+				width: 130px
+				border-radius: 10px
+				+med
+				font-size: 12px
+				position: relative
+				&::placeholder
+					+med
+					font-size: 12px
+		&--inputresult
+			padding-left: 15px
+			background: $white
+			border-radius: 10px
+			padding: 15px
+			width: 130px
+			text-align: left
+			font-size: 12px
+			+med
+			position: relative
+		&--left,
+		&--right
+			input
+				display: block
+			span
+				display: block
+				font-size: 10px
+				+med
+				text-align: left
+				margin-bottom: 10px
+		&--center
+			margin: 0 10px
+			position: relative
+			top: 10px
+		.form__group 
+			position: relative
+			span
+				position: absolute
+				right: 15px
+				top: 50%
+				transform: translateY(-50%)
+				+med
+				font-size: 12px
+				color: #ddd
+
+	#cb-usd svg,
+	#cb-eur svg
+		margin-left: 3px

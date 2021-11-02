@@ -1,0 +1,84 @@
+.corporate-news
+    .section__info
+        margin: 40px 0 50px
+        +r(768)
+            margin: 0
+        .info__text
+            font-size: 20px
+            line-height: 150%
+            +ireg
+            padding: 15px 0
+            +r(768)
+                font-size: 16px
+    .section__icon
+        display: flex
+        justify-content: flex-end
+        +r(768)
+            justify-content: flex-start
+        .icon__text
+            padding-top: 6px
+            font-weight: 500
+            font-size: 16px
+            line-height: 100%
+            color: $green
+            +r(768)
+                font-size: 14px
+        a
+            margin-left: 20px
+            img
+                +r(768)
+                    width: 20px
+                    height: 20px
+    .mini-contact
+        .section__column
+            padding: 30px 50px
+            .column--1
+                display: grid
+                grid-template-columns: repeat(3,1fr)
+                grid-gap: 30px
+                .mini-contact__phone
+                    color: $black
+                    font-weight: 500
+                    font-size: 18px
+                img
+                    margin: 4px 10px
+                    max-width: 15px
+                    height: 15px
+                .col-1
+                    display: flex
+                    align-items: center
+                    .col__title
+                        padding: 0
+                    .col__text
+                        font-size: 16px
+                .col-2
+                    padding: 30px 0
+                    display: flex
+
+                .col-3
+                    padding: 30px 0
+                    display: flex
+
+
+.press-single 
+    .headline
+        +r(768)
+            margin-bottom: 0
+        .container
+            display: flex
+            justify-content: space-between
+            +r(768)
+                flex-direction: column
+
+    .page__title br
+        display: none
+
+    .contact-smi
+        margin-top: 60px
+
+.ps__date
+    +ireg
+    font-size: 18px
+    color: $green
+    +r(768)
+        margin: 20px 0

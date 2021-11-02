@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Страница Ошибки</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" />
+    <style>
+        .error-page {
+            width: 100%;
+            height: calc(100vh - 15vh);
+        }
+
+        .error-page .container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .error-page .error-page__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-page .error-page__title {
+            font-size: 180px;
+            line-height: 80%;
+            color: #E0BD70;
+            font-family: "umed", arial, sans-serif;
+        }
+
+        .error-page .error-page__subtitle {
+            padding: 20px 0;
+            font-size: 30px;
+            line-height: 100%;
+            color: #073F37;
+            font-family: "ureg", arial, sans-serif
+        }
+
+        .error-page .error-page__text {
+            font-size: 16px;
+            line-height: 130%;
+            text-align: center;
+            font-family: "ireg", arial, sans-serif
+        }
+
+        .error-page .error-page__btn {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 18px;
+            font-family: "umed", arial, sans-serif;
+            background-color: #073F37;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding: 16px 20px;
+        }
+
+        .error-page .error-page__btn:hover {
+            color: #073F37;
+            background-color: #E0BD70;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .error-page .error-page__title {
+                font-size: 150px;
+            }
+
+            .error-page .error-page__subtitle {
+                font-size: 25px;
+            }
+
+            .error-page .error-page__text {
+                font-size: 14px;
+            }
+
+            .error-page .error-page__btn {
+                font-size: 16px;
+                padding: 12px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body class="homepage">
+
+    <!-- BEGIN content -->
+    <header>
+        <div class="container">
+            <button type="button" class="burger"><img src="img/burger.svg" alt=""></button>
+            <a href="/" class="header__logo"><img src="img/logo-2.svg" alt="Asia Invest Bank" /></a>
+            <div class="header__center">
+                <div class="header__menu">
+                    <ul>
+                        <li><a href="rko-scheta.html">Бизнесу</a></li>
+                        <li><a href="finansirovanie-kreditovanie.html">Финансовым организациям</a></li>
+                        <li><a href="krediti.html">Частным клиентам</a></li>
+                        <li><a href="express.html">АзияЭкспресс</a></li>
+                        <li><a href="about.html">Банк</a></li>
+                    </ul>
+                </div>
+                <div class="header__action">
+                    <div class="header__action--item header--search">
+                        <button><img src="img/search-2.svg" alt="" /></button>
+                    </div>
+                    <div class="header__action--item header--phone">
+                        <a href="tel:1234"><img src="img/phone-2.svg" alt="" /></a>
+                    </div>
+                    <div class="header__action--item header--lang">
+                        <button><img src="img/uz.svg" alt="" /></button>
+                    </div>
+                    <div class="header__action--item header--eye">
+                        <button><img src="img/eye-2.svg" alt="" /></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__banking">
+                <a class="btn btn-white" href="internet-banking.html">Интернет-банкинг</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile__overlay">
+        <div class="mobile__overlay--close">
+            <button><img src="img/mobile-x.svg" alt=""></button>
+        </div>
+        <form class="mobile__overlay--search" id="33" method="POST" autocomplete="off">
+            <input type="text" placeholder="Поиск" required />
+        </form>
+        <div class="header__mobmenu footer__mobmenu">
+            <ul>
+                <li>
+                    <h3><a href="#"><img src="img/mob-internet-bank.svg" alt=""> Интернет-банкинг</a> <img
+                            src="img/mob-arrow-45.svg" alt=""></h3>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-biznes.svg" alt=""> Бизнесу</a> <img src="img/footer-arrow.svg"
+                            alt=""></h3>
+                    <ul>
+                        <li>
+                            <a href="#">РКО</a> <img src="img/footer-arrow.svg" alt="">
+                            <ul>
+                                <li><a href="rko-scheta.html">Счета</a></li>
+                                <li><a href="rko-dokument.html">Документарные операции</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="finansirovanie-kreditovanie.html">Финансирование</a></li>
+                        <li><a href="usloviya-depozitov.html">Депозиты</a></li>
+                        <li><a href="rekviziti.html">Реквизиты</a></li>
+                        <li><a href="vekselya.html">Векселя</a></li>
+                        <li><a href="valutniy-control.html">Валютный контроль</a></li>
+                        <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-chart.svg" alt=""> Финансовым организациям</a> <img
+                            src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li><a href="mejbankovskoe-kreditovanie.html">Межбанковское кредитование</a></li>
+                        <li><a href="bank-partneri.html">Банки-партнеры</a></li>
+                        <li><a href="banknotnie-operacii.html">Банкнотные операции</a></li>
+                        <li><a href="valyutno-obmennie.html">Валютно-обменные операции</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-user.svg" alt=""> Частным клиентам</a> <img
+                            src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li><a href="krediti.html">Кредиты</a></li>
+                        <li><a href="ipoteka.html">Ипотека</a></li>
+                        <li><a href="tarifi-dokumenti.html">Тарифы и документы</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-express.svg" alt=""></a> <img src="img/mob-arrow-45.svg" alt="">
+                    </h3>
+                </li>
+                <li>
+                    <h3><a href="#"><img src="img/mob-home.svg" alt=""> Азия-Инвест Банк (АО)</a> <img
+                            src="img/footer-arrow.svg" alt=""></h3>
+                    <ul>
+                        <li><a href="about.html">О банке</a></li>
+                        <li><a href="rukovodstvo-banka.html">Руководство</a></li>
+                        <li><a href="raskritie-info.html">Раскрытие информации</a></li>
+                        <li><a href="rekviziti.html">Реквизиты</a></li>
+                        <li><a href="press-slujba.html">Пресс-служба</a></li>
+                        <li><a href="career.html">Карьера в Банке</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="error-page">
+        <div class="container">
+            <div class="error-page__content">
+                <div class="error-page__title">404</div>
+                <div class="error-page__subtitle">Такой страницы нет</div>
+                <div class="error-page__text">Возможно, она была перемещена,<br />
+                    или вы просто неверно указали<br /> адрес страницы.</div>
+                <a href="index.html"><button class="error-page__btn">Перейти на главную</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

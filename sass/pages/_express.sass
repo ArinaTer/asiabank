@@ -1,0 +1,107 @@
+// Express
+.express
+	header.white
+		background: $green2
+	.header__logo
+		border-right: none
+	.header__center
+		width: auto
+		padding: 0
+	.footer
+		background: $f5
+		padding-top: 60px
+		margin-top: 100px
+		&__contacts
+			display: flex
+			-webkit-justify-content: space-between 
+			justify-content: space-between
+			width: 100%
+		&__social a
+			background: $white 
+			&:hover
+				background: $green 
+	.banner
+		background: $green2
+		height: auto
+		padding-bottom: 50px
+		
+		&__item
+			-webkit-align-items: center
+			align-items: center
+		
+		&__content
+			padding-top: 0
+		
+		&__img
+			padding-top: 0
+			position: relative
+			
+	&__support
+		position: absolute
+		bottom: 0
+		right: 0
+		border: 1px solid $white
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		color: $white
+		border-radius: 30px
+		padding: 18px 30px
+		
+		&--social
+			a
+				display: inline-block
+				margin-left: 15px
+			svg
+				width: 18px
+				height: 18px
+			path
+				fill: $white
+			stroke
+				fill: $white
+				
+.express__services
+	margin-top: 100px
+	&--list
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 30px
+	&--item
+		height: 260px
+		padding: 30px
+		background: $f5
+		font-size: 25px
+		border-radius: 10px
+		position: relative
+		transition: .25s ease-out
+		&:hover
+			background: $gold
+		img
+			max-width: 180px
+			width: 100%
+			position: absolute
+			bottom: 0
+			right: 0
+			
+.express__objects
+	margin-top: 100px
+			
+.express__faq
+	margin: 100px 0
+	
+.express__info
+	&--text
+		background: $f5
+		padding: 30px
+		border-radius: 10px
+		margin-top: 40px
+		p
+			color: $green
+			+ireg
+			font-size: 20px
+			line-height: 130%
+			margin-bottom: 20px
+			&:first-child
+				color: $black
+			&:last-child
+				margin-bottom: 0

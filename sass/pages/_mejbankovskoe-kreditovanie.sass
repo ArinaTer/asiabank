@@ -1,0 +1,83 @@
+.lending
+    .container
+        +r(768)
+            padding: 0
+    .cards__info
+        +r(768)
+            margin: 60px 0
+    .card
+        +r(768)
+            padding: 30px 15px
+    .card__text
+        +r(768)
+            font-size: 18px
+            padding: 0
+
+.info-lending
+    .section__title
+        padding: 100px 0 60px
+        +r(768)
+            font-size: 18px
+            +med
+            padding: 40px 0
+    .section__column
+        display: flex
+        padding-bottom: 40px
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+
+        .column
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex-basis: 100%
+            max-width: 100%
+            padding-bottom: 60px
+            +r(768)
+                padding-bottom: 0
+            svg
+                margin: 0 0 30px
+                +r(768)
+                    width: 40px
+                    height: 40px
+                    margin-bottom: 20px
+            .col__text
+                border-top: 1px solid $green
+                padding: 20px 0
+                text-align: center
+                +r(768)
+                    font-size: 16px
+        .block__cols
+            flex-basis: 100%
+            max-width: 100%
+            .col__text
+                padding: 20px 0
+                border-top: 1px solid $green
+
+.mini-info-lending
+    margin: 60px 0
+    .section__title
+        padding: 100px 0 60px
+        +r(768)
+            font-size: 18px
+            +med
+            padding: 40px 0
+    .section__column
+        display: flex
+        padding-bottom: 40px
+        grid-gap: 30px
+        +r(768)
+            flex-direction: column
+    .block__cols
+        flex-basis: 100%
+        max-width: 100%
+    .col__text
+        padding: 20px 0
+        border-top: 1px solid $green
+
+.mini-contact .mini-contact__text
+    +r(768)
+        padding: 30px 15px
+        font-size: 18px
+        line-height: 130%

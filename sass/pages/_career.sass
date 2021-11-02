@@ -1,0 +1,106 @@
+.career
+    .hero .container
+        padding: 0 0 0 15px
+    .hero__content
+        padding-top: 30px
+
+.hero__breadcrumbs
+    +r(768)
+        display: none
+
+.bank-career
+    .section__points
+        margin: 100px 0
+        +r(768)
+            margin: 45px 0
+        .point__text
+            font-size: 25px
+            line-height: 130%
+            list-style-type: none
+            padding: 30px 0 0
+            +r(768)
+                font-size: 18px
+
+.bank-career-info
+    .section__column
+        display: flex
+        grid-gap: 30px
+        padding: 40px 0
+        +r(768)
+            flex-direction: column
+
+        .block__cols-1,
+        .block__cols-2,
+        .block__cols-3
+            flex-basis: 23%
+            max-width: 23%
+            border: none
+            .col__text
+                padding-top: 20px
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+
+        .column
+            display: flex
+            border-bottom: 1px solid $green
+            justify-content: space-between
+            .col__item
+                padding: 20px 0
+                display: block
+                color: $gold
+                font-weight: bold
+                font-size: 20px
+    .column--1
+        .block__cols-2
+            flex-basis: 50%
+            max-width: 50%
+            +r(768)
+                flex-basis: 100%
+                max-width: 100%
+
+    .column--2
+        justify-content: flex-end
+
+.contact-career
+    .container
+        padding: 0
+    .mini-contact
+        margin: 100px 0 40px
+        +r(768)
+            margin: 60px 0 20px
+    .section__column
+        padding: 30px 50px
+        +r(768)
+            padding: 15px
+        .column--1
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            grid-gap: 30px
+            +r(768)
+                grid-template-columns: repeat(1,1fr)
+                grid-gap: 10px
+            .mini-contact__phone
+                color: $black
+                font-size: 18px
+                text-align: left
+            img
+                margin: 6px 10px
+                max-width: 15px
+                height: 15px
+            .col-1
+                .col__title
+                    padding: 10px 0
+                .col__text
+                    font-size: 16px
+                    line-height: 120%
+            .col-2
+                padding: 30px 0
+                display: flex
+                +r(768)
+                    padding: 20px 0 10px
+            .col-3
+                padding: 30px 0
+                display: flex
+                +r(768)
+                    padding: 0 0 0 0

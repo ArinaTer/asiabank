@@ -1,0 +1,59 @@
+.accordion
+    padding: 0 30px
+    background: $f5
+    border-radius: 10px
+    +r(768)
+        padding: 0 15px
+
+.accordion__item
+    border-bottom: 0.5px solid $green
+    padding: 25px 0
+    &:hover
+        cursor: pointer
+    &:last-child
+        border-bottom: none
+    +r(768)
+        padding: 20px 0
+
+.accordion__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .accordion__text
+        +med
+        font-size: 25px
+        color: $green
+        position: relative
+        cursor: pointer
+        display: inline-block
+        +r(768)
+            font-size: 16px
+            line-height: 110%
+            padding-right: 10px
+    svg
+        transition: transform .5s ease
+        transform: rotate(0deg)
+        display: inline-block
+        min-width: 20px
+        min-height: 20px
+        +r(768)
+            width: 20px
+            height: 20px
+
+.accordion__body
+    padding: 35px 0
+    font-weight: 300
+    font-size: 14px
+    color: #5f6c7b
+    line-height: 1.5
+    display: none
+
+    .open-accordion &
+        display: block
+
+.open-accordion .accordion__header .accordion__text
+    color: $gold
+
+.open-accordion .accordion__header svg
+    transform: rotate(-135deg)
+    transition: transform .5s ease

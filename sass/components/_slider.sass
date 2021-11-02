@@ -1,0 +1,66 @@
+.slick-dots
+    li
+        button
+            padding: 0 10px
+            &:before
+                content: ""
+                display: block
+                background: $white
+
+            &:hover
+                &:before
+                    background: $green
+
+        &.slick-active button:before
+            background: $green
+
+// .slick-dots li button:before
+//     background: green
+
+// .slick-dots li.slick-active button:before
+//     opacity: 1
+//     background: red
+
+.slick-dots
+    z-index: 100
+
+.bank-career__slider
+    position: relative
+    .slider__btn
+        position: absolute
+        bottom: 40px
+        right: 40px
+        display: flex
+        grid-gap: 20px
+        +r(768)
+            display: none
+    .prev__btn
+        background-color: $white
+        width: 55px
+        height: 55px
+        border-radius: 8px
+    .next__btn
+        width: 55px
+        height: 55px
+        background-color: $white
+        border-radius: 8px
+        transform: rotateY(180deg)
+
+    .slick-slide img
+        +r(768)
+            height: 250px
+            width: 100%
+            object-fit: cover
+            object-position: center
+            border-radius: 10px 
+
+    .slick-dots
+        bottom: 5px
+
+    .slick-dots li
+        width: 8px
+        height: 8px
+
+    .slick-dots li button:before
+        width: 8px
+        height: 8px
